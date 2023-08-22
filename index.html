@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JS Link -->
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <!-- Score board -->
+    <header>
+      <h1 class="title">Rock, Papper, Scissors Game</h1>
+    </header>
+
+    <div class="scoreboard">
+      <div class="round">
+        <div class="round-child">
+          <p>Round: <span>0</span></p>
+        </div>
+      </div>
+      <div class="user"><p>You</p></div>
+      <div class="score-parrent">
+        <div class="score-child">
+          <span class="user-score">0</span>:<span class="computer-score"
+            >0</span
+          >
+        </div>
+      </div>
+      <div class="computer"><p>Computer</p></div>
+    </div>
+
+    <!-- Message -->
+    <div class="message">
+      <p>Choose between rock, paper or scissors.</p>
+    </div>
+
+    <!-- Options -->
+    <div class="choices-container">
+      <div class="choice" id="rock">
+        <img src="./images/rock.png" alt="rock" />
+      </div>
+      <div class="choice" id="paper">
+        <img src="./images/paper.png" alt="paper" />
+      </div>
+      <div class="choice" id="scissors">
+        <img src="./images/scissors.png" alt="scissors" />
+      </div>
+    </div>
+
+    <!-- Reset -->
+    <div class="reset">
+      <button>Reset Game</button>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Final Score!</h3>
+          <button class="close-btn">&times;</button>
+        </div>
+        <div class="score-container">
+          <p>Rounds: <span class="rounds">0</span></p>
+          <p>Wins: <span class="wins">0</span></p>
+          <p>Losses: <span class="losses">0</span></p>
+          <p>Draws: <span class="draws">0</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
